@@ -3,13 +3,14 @@
     <nav class="navbar is-white">
         <div class="navbar-brand">
             <logo></logo>
-            <div class="navbar-burger burger" data-target="navMenu">
+            <div class="navbar-burger burger" data-target="navMenu"
+                 @click.prevent="toggleNav">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
-        <div id="navMenu" class="navbar-menu">
+        <div id="navMenu" class="navbar-menu" :class="{'is-active': active}">
             <div class="navbar-start">
                 <menu-main></menu-main>
             </div>
@@ -27,6 +28,17 @@
       MenuMain
     },
     props: {},
+    data: function () {
+      return {
+        active: false
+      }
+    },
+    methods: {
+      toggleNav: function () {
+        this.active = !this.active
+        console.log(this.active)
+      }
+    }
   }
 </script>
 <style lang="scss" scoped>

@@ -26,7 +26,15 @@ module.exports = {
       },
     ],
   },
-
+  extend(config, { isServer }) {
+    if (isServer) {
+      config.externals = [
+        nodeExternals({
+          whitelist: [/\.(?!(?:js|json)$).{1,5}$/i, [/^vue-awesome/, /^vue-bulma/]]
+        })
+      ]
+    }
+  },
   /*
   ** Customize the progress-bar color
   */
@@ -36,6 +44,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    'foundation-sites/scss/foundation.scss',
     '@/assets/scss/main.scss',
   ],
 
@@ -56,6 +65,7 @@ module.exports = {
     ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
     'nuxt-netlify-cms',
     'nuxtent',
+    '@nuxtjs/router',
   ],
   /*
   ** Build configuration
@@ -66,7 +76,7 @@ module.exports = {
       require('autoprefixer')({
         browsers: ['> 5%'],
         grid: true
-      })
+      }),
     ],
     /*
     ** You can extend webpack config here
