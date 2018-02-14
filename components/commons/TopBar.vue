@@ -38,9 +38,25 @@
         this.active = !this.active
         console.log(this.active)
       }
+    },
+    mounted() {
+      if(this.$breakpoints.isMobile()) {
+        this.active = true
+      }
     }
   }
 </script>
 <style lang="scss" scoped>
 
+    .is-active {
+        display: none;
+    }
+    @include tablet {
+        .navbar {
+            padding-top: 30px;
+        }
+        .navbar-menu {
+            display: none;
+        }
+    }
 </style>

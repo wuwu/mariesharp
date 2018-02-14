@@ -1,17 +1,15 @@
 <template>
     <section id="footer" class="container has-bg">
-        <div class="navigation">
-        </div>
-        <div class="disclaimer">
-            <nuxt-link to="/datenschutz">Datenschutz</nuxt-link><br/>
-                <nuxt-link to="/datenschutz">Impressum</nuxt-link>
-        </div>
+        <menu-footer></menu-footer>
     </section>
 </template>
 <script type="text/babel">
+  import MenuFooter from '~/components/commons/MenuFooter.vue'
+
   export default {
     name: 'Footer',
     components: {
+      MenuFooter
     },
     props: {},
   }

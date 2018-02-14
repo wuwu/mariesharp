@@ -44,7 +44,6 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'foundation-sites/scss/foundation.scss',
     '@/assets/scss/main.scss',
   ],
 
@@ -53,6 +52,7 @@ module.exports = {
   */
   plugins: [
     '~plugins/vue-scrollto.js',
+    '~plugins/breakpoints.js',
     '~plugins/markdown-helpers.js',
     { src: '~/plugins/vue-markdown.js', ssr: false }
 
@@ -74,10 +74,11 @@ module.exports = {
     vendor: ['vue-markdown'],
     postcss: [
       require('autoprefixer')({
-        browsers: ['> 5%'],
+        browsers: ['last 2 versions', 'ie >= 9', 'Android >= 2.3', 'ios >= 7'],
         grid: true
       }),
     ],
+
     /*
     ** You can extend webpack config here
     */

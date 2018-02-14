@@ -14,10 +14,8 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^4.5.0",
-    "@nuxtjs/bulma": "^1.1.0",
     "@nuxtjs/router": "^1.0.1",
     "bulma": "^0.6.1",
-    "foundation-sites": "^6.4.4-rc1",
     "netlify-cms": "^1.0.2",
     "nuxt": "1.0.0-rc11",
     "nuxtent": "latest"
@@ -41,6 +39,7 @@
     "sass-loader": "^6.0.6",
     "vue-markdown": "^2.2.4",
     "vue-scrollto": "^2.8.0",
+    "vue-simple-breakpoints": "^1.0.3",
     "vuex-router-sync": "^5.0.0"
   },
   "config": {
