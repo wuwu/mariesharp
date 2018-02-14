@@ -17,7 +17,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i,700,700i' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Gochi+Hand|Molle:400i|Permanent+Marker|Rock+Salt|Schoolbell|Sedgwick+Ave+Display' }
     ],
     script: [
       {
@@ -94,7 +94,7 @@ module.exports = {
           page: '/_slug',
           permalink: '/:slug',
           isPost: false,
-          generate: ['get', 'getAll'],
+          generate: ['get'],
         },
       ],
     ],

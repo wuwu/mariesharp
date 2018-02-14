@@ -14,8 +14,8 @@
 </template>
 
 <script type="text/babel">
-import Logo from '~/components/Logo.vue'
-import Navigation from '~/components/Navigation.vue'
+import Logo from '~/components/commons/Logo.vue'
+import Navigation from '~/components/commons/Navigation.vue'
 import Intro from '~/components/SectionIntro.vue'
 import Skin from '~/components/SectionSkinIntro.vue'
 import Facial from '~/components/SectionFacial.vue'

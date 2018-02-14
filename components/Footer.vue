@@ -1,7 +1,6 @@
 <template>
     <section id="footer" class="container has-bg">
         <div class="navigation">
-            <main-menu></main-menu>
         </div>
         <div class="disclaimer">
             <nuxt-link to="/datenschutz">Datenschutz</nuxt-link><br/>
@@ -10,11 +9,9 @@
     </section>
 </template>
 <script type="text/babel">
-  import MainMenu from '~/components/MainMenu.vue'
   export default {
     name: 'Footer',
     components: {
-      MainMenu
     },
     props: {},
   }

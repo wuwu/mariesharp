@@ -6,7 +6,7 @@ html {
   background-color: $white-ter;
 }
 body {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Permanent Marker', cursive;
   line-height: 1.45;
   font-style: italic;
   font-weight: $weight-normal;
@@ -16,6 +16,26 @@ body {
   margin: 0 auto;
   font-size: 20px;
 }
+
+.font1 {
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+.font {
+  font-family: 'Molle', cursive;
+}
+.font3 {
+  font-family: 'Schoolbell', cursive;
+}
+.font4 {
+  font-family: 'Gochi Hand', cursive;
+}
+.font5 {
+  font-family: 'Rock Salt', cursive;
+}
+.font6 {
+  font-family: 'Permanent Marker', cursive;
+}
+
 
 .container {
   //min-height: 100vh;
