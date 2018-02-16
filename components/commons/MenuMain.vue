@@ -18,21 +18,24 @@
         padding: 0;
         margin: 0;
         list-style: none;
-
+        li {
+            text-align: right;
+        }
         a {
             font-size: 2rem;
             color: $black;
             background-color: rgba($white, .35);
-            padding: 4px 8px;
+            padding: 4px 32px 4px 8px;
             font-style: normal;
             font-weight: $weight-normal;
             text-decoration: none;
             display: inline-block;
-            transform: rotate(-5deg);
+            transform: rotate(5deg);
+            text-align: right;
             transition: 0.3s ease-in-out;
             &:hover {
                  color: $red;
-                transform: rotate(1deg);
+                transform: rotate(-1deg);
                 font-size: 2.3rem;
 
              }

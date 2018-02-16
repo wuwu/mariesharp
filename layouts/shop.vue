@@ -1,14 +1,17 @@
 <template>
-    <div class="container layout layout--shop">
+    <div class="layout layout--shop">
         <top-bar/>
-        <div class="columns">
-            <div class="column sidebar">
+        <div id="navMenu" class="menu" :class="{'is-active': active}">
+            <div class="navbar-start">
                 <menu-main></menu-main>
             </div>
+        </div>
+        <div class="columns">
             <div class="column main">
                 <nuxt/>
             </div>
         </div>
+
         <page-footer></page-footer>
         <button-scroll-top></button-scroll-top>
         <debug-info></debug-info>
@@ -30,13 +33,20 @@
         DebugInfo,
         ButtonScrollTop,
         PageFooter
-      }
+      },
+      data: function () {
+        return {
+          active: false
+        }
+      },
     }
 </script>
 <style lang="scss" scoped>
     .columns {
-        max-width: 1200px;
+        max-width: 960px;
         margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
     }
     .layout--shop {
         min-height: 100vh;
@@ -44,12 +54,18 @@
         background-size: cover;
         background-attachment: fixed;
     }
-    .columns {
-        display: flex;
+    .main {
+        padding-top: 180px;
     }
-    .column {
-    }
-    .sidebar {
-        flex: 0 0 320px;
+    .menu {
+        display: none;
+        width: 360px;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
     }
 </style>

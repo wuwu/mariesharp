@@ -1,19 +1,14 @@
 <template>
     <!-- START NAV -->
-    <nav class="navbar is-white">
+    <nav class="marie-navbar">
         <div class="navbar-brand">
             <logo></logo>
-            <div class="navbar-burger burger" data-target="navMenu"
-                 @click.prevent="toggleNav">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
-        <div id="navMenu" class="navbar-menu" :class="{'is-active': active}">
-            <div class="navbar-start">
-                <menu-main></menu-main>
-            </div>
+        <div class="navbar-burger burger" data-target="navMenu"
+             @click.prevent="toggleNav">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
     <!-- END NAV -->
@@ -28,35 +23,49 @@
       MenuMain
     },
     props: {},
-    data: function () {
-      return {
-        active: false
-      }
-    },
+
     methods: {
       toggleNav: function () {
         this.active = !this.active
         console.log(this.active)
       }
     },
-    mounted() {
-      if(this.$breakpoints.isMobile()) {
+    computed() {
+      if(this.$mq === 'sm') {
         this.active = true
       }
     }
   }
 </script>
 <style lang="scss" scoped>
-
+    .marie-navbar {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+    }
     .is-active {
-        display: none;
+        display: flex;
+    }
+    .navbar-brand {
+        flex-grow: 2;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3.25rem;
+
+    }
+    .navbar-burger {
+        flex-basis: 3.25rem;
     }
     @include tablet {
-        .navbar {
+        .marie-navbar {
             padding-top: 30px;
+            justify-content: center;
         }
-        .navbar-menu {
-            display: none;
+        .navbar-brand {
+            padding-right: 3.25rem;
+
         }
     }
 </style>
