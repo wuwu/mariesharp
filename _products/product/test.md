@@ -1,13 +1,14 @@
 ---
-title: test
+title: Marie Sharp's HOT
 select: Die Klassischen
 thumbnail: /static/uploads/marie-sharp-habanero-pepper-sauce-hot.png
+piquancy: '0'
 ingredients: >-
   Zutaten: Rote/red Habanero Chilis (40%), Karotten/carrots (28%),
   Essig/vinegar, Zwiebeln/onions, Salz/salt, Limettensaft/lime juice,
   Knoblauch/garlic, Aroma Senf-/mustard Extrakt
 priceSmall: '4.99'
-priceLarge: '7'
+priceLarge: '8.00'
 date: 2018-02-16T16:34:39.913Z
 nutrition: /static/uploads/marie-sharp-nutrition-hot.png
 ---
