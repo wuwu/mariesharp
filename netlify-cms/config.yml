@@ -8,13 +8,37 @@ backend:
 media_folder: "static/uploads"
 
 collections: # A list of collections the CMS should be able to edit
+  - label: "Blog"
+    name: "blog"
+    folder: "_posts/blog"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Produkte"
+    name: "products"
+    folder: "_products/product"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kategorie", name: "select", widget: "select", options: ["Die Klassischen", "Die Extra Schrafen", "Die Fruchtigen", "Special Editions", "other"]}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Zutaten", name: "ingredients", widget: "markdown"}
+      - {label: "Preis - klein", name: "priceSmall", widget: "number"}
+      - {label: "Preis - groß", name: "priceLarge", widget: "number"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Image - Mähwerttabelle", name: "nutrition", widget: "image"}
+
   - label: Pages
     name: pages
     create: false
     delete: false
     files:
 
-      - label: Datenschutz / Impressum
+      - label: Impressum
         name: datenschutz
         delete: false
         file: content/pages/datenschutz.yml
