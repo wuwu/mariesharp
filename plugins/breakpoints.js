@@ -1,4 +1,11 @@
 import Vue from 'vue'
-import VueSimpleBreakpoints from 'vue-simple-breakpoints'
+import VueMq from 'vue-mq'
 
-Vue.use(VueSimpleBreakpoints,{ mobile: 375, tablet: 768, small_desktop: 1024, large_desktop: 1200 })
+
+Vue.use(VueMq, {
+  breakpoints: { // default breakpoints - customize this
+    sm: 640,
+    md: 768,
+    lg: 1024,
+  }
+})
