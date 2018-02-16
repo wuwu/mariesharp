@@ -10,7 +10,7 @@ media_folder: "static/uploads"
 collections: # A list of collections the CMS should be able to edit
   - label: "Blog"
     name: "blog"
-    folder: "_posts/blog"
+    folder: "content/posts"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -19,7 +19,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
   - label: "Produkte"
     name: "products"
-    folder: "_products/product"
+    folder: "content/products"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
