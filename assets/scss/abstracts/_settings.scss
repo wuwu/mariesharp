@@ -23,9 +23,10 @@ $green:        hsl(141, 71%,  48%) !default
 $turquoise:    hsl(171, 100%, 41%) !default
 $blue:         hsl(217, 71%,  53%) !default
 $purple:       hsl(271, 100%, 71%) !default
-$red: hsl(9, 81%, 55%) !default
+$red:          hsl(9, 81%, 55%) !default
 
-$primary: rgb(37,178,211);
+$primary: hsl(9, 81%, 55%) !default
+
 $info: $blue !default
 $success: $green !default
 $warning: $yellow !default
@@ -45,13 +46,13 @@ $light: $white-ter !default
 $dark: $grey-darker !default
 
 // Invert colors
-$orange-invert: findColorInvert($orange) !default
-$yellow-invert: findColorInvert($yellow) !default
-$green-invert: findColorInvert($green) !default
-$turquoise-invert: findColorInvert($turquoise) !default
-$blue-invert: findColorInvert($blue) !default
-$purple-invert: findColorInvert($purple) !default
-$red-invert: findColorInvert($red) !default
+$orange-invert: $white !default
+$yellow-invert: $black !default
+$green-invert: $white !default
+$turquoise-invert: $white !default
+$blue-invert: $white !default
+$purple-invert: $white !default
+$red-invert: $white !default
 
 $primary-invert: $turquoise-invert !default
 $info-invert: $blue-invert !default
@@ -120,6 +121,31 @@ $size-large: $size-4 !default
 ////////////////////////////////////////////////
 // 4. Lists and maps
 
-$colors: ("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert)) !default
+$colors: (
+        "white": ($white, $black),
+        "black": ($black, $white),
+        "light": ($light, $light-invert),
+        "dark": ($dark, $dark-invert),
+        //"danger": ($danger, $danger-invert)
+        //"primary": ($primary, $primary-invert),
+        "info": ($info, $info-invert),
+) !default
+
+$shades: (
+        "black-bis": $black-bis,
+        "black-ter": $black-ter,
+        "grey-darker": $grey-darker,
+        "grey-dark": $grey-dark,
+        "grey": $grey,
+        "grey-light": $grey-light,
+        "grey-lighter": $grey-lighter,
+        "white-ter": $white-ter,
+        "white-bis": $white-bis
+) !default
 
 $sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 !default
+
+
+
+//"success": ($success, $success-invert),
+//"warning": ($warning, $warning-invert),
