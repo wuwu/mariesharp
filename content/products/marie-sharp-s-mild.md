@@ -10,7 +10,7 @@ ingredients: >-
 priceSmall: '4.99'
 priceLarge: '8.00'
 date: 2018-02-16T18:15:33.805Z
-nutrition: /static/uploads/marie-sharp-nutrition-mild.png
+nutrition: /uploads/marie-sharp-nutrition-mild.png
 ---
 Für Einsteiger. Eine milde Variante des Ursprungsrezepts, die weniger scharfe Habaneros enthält als die Originalsauce, dabei aber nichts an Aroma einbüßt. Eignet sich besonders gut zum Schärfen von Suppen und Eintöpfen. 
 

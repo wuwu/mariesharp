@@ -1,7 +1,7 @@
 ---
 title: Marie Sharp's GREEN HABANERO
 select: Die Fruchtigen
-thumbnail: /static/uploads/marie-sharp-habanero-pepper-sauce-greenhabanero.png
+thumbnail: /uploads/marie-sharp-habanero-pepper-sauce-greenhabanero.png
 piquancy: '5'
 ingredients: >-
   Feigenkaktus/Nopal (51%), grüne/green Habanero Chilis (17%), Zwiebeln/onions,
@@ -9,7 +9,7 @@ ingredients: >-
   Senf-/mustard Extrakt
 priceSmall: '5.99'
 priceLarge: '9'
-nutrition: /static/uploads/marie-sharp-nutrition-green.png
+nutrition: /uploads/marie-sharp-nutrition-green.png
 date: 2018-02-16T18:48:52.222Z
 ---
 **Für viele ein Geheimtipp. **Diese Sauce ist besonders in der Karibik sehr beliebt. Sie basiert auf dem Fruchtfleisch des Nopal-Feigenkaktus und enthält viele exrascharfe grüne Habaneros. Ob zu Steak, Geflügel oder zu Meeresfrüchten – diese geschmackvolle scharfe Frische sucht ihresgleichen. 

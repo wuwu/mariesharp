@@ -12,9 +12,6 @@ export default {
   layout: 'shop',
   components: {
   },
-  asyncData: async ({ app }) => ({
-    postIntro: await app.$content('/pages').get('/about'),
-  }),
 }
 </script>
 

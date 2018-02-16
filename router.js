@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Front from '~/pages/index'
 import About from '~/pages/about/marie'
 import Friends from '~/pages/friends/mr-nowimps'
+import Shop from '~/pages/shop'
+import Product from '~/pages/shop/Product'
 
 
 Vue.use(Router)
@@ -13,7 +15,9 @@ export function createRouter () {
     routes: [
       { path: '/', component: Front, name: 'front' },
       { path: '/about', component: About, name: 'about' },
-      { path: '/friends', component: Friends, name: 'friends' }
+      { path: '/friends', component: Friends, name: 'friends' },
+      { path: '/shop', component: Shop, name: 'shop' },
+      { path: '/:shop/:slug', name: 'Product', component: Product }
     ],
     scrollBehavior (to, from, savedPosition) {
       // return desired position

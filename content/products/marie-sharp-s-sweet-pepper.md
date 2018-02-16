@@ -1,7 +1,7 @@
 ---
 title: Marie Sharp's SWEET PEPPER
 select: Special Editions
-thumbnail: /static/uploads/marie-sharp-habanero-pepper-sauce-sweet-pepper.png
+thumbnail: /uploads/marie-sharp-habanero-pepper-sauce-sweet-pepper.png
 piquancy: '2'
 ingredients: >-
   Rote/red Habanero Chilis (24%), Zwiebeln/onions, Knoblauch/garlic,
@@ -9,7 +9,7 @@ ingredients: >-
   Verdickungsmittel/thickener: Pektin/pectine
 priceSmall: '899'
 priceLarge: '1350'
-nutrition: /static/uploads/marie-sharp-nutrition-sweet-pepper.png
+nutrition: /uploads/marie-sharp-nutrition-sweet-pepper.png
 date: 2018-02-16T00:00:00+01:00
 ---
 **Die süßeste Seite von Marie.. **Genießen Sie dieses frische süßsaure Geschmackserlebnis mit feiner charakteristischer Habanero Schärfe, dem leichten Aroma von Koriander und frischem Limettensaft. Wer etwas Schärfe bei klassischen Thaisaucen vermisst, für den ist unsere Sweet Pepper genau das Richtige. 

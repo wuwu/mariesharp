@@ -104,10 +104,16 @@ module.exports = {
         {
           page: '/_slug',
           permalink: '/:slug',
+          generate: ['get', 'getAll'],
           isPost: false,
-          generate: ['get'],
         },
       ],
+      ["products", {
+        page: '/shop/_slug',
+        permalink: ":slug",
+        isPost: false,
+        generate: ['get', 'getAll'],
+      }]
     ],
   },
 }
