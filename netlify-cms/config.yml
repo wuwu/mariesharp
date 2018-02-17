@@ -76,7 +76,7 @@ collections: # A list of collections the CMS should be able to edit
         delete: false
         file: content/pages/imladen.yml
         fields:
-          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Image, name: image, widget: image, required: false, tagname: "", required: false}
           - {label: Title, name: title, widget: string}
           - {label: "Publish Date", name: "date", widget: "datetime"}
           - {label: "Body", name: "body", widget: "markdown"}
