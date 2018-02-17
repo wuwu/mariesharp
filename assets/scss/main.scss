@@ -12,13 +12,13 @@ html {
 
 body {
   font-family: 'Permanent Marker', cursive;
-  line-height: 1.45;
+  line-height: 1.35;
   font-style: italic;
   font-weight: $weight-normal;
   background-color: $white;
   color: $black;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 p {
@@ -26,7 +26,26 @@ p {
 }
 
 .page {
-  padding-top: 160px;
+  padding: 130px 8px 0 8px;
+  padding-top: 130px;
+  padding-left: $padding-mobile;
+  padding-bottom: 0;
+  padding-right: $padding-mobile;
+  max-width: 768px;
+  margin: 0 auto;
+  @include tablet {
+    padding-top: 180px;
+    margin-right: 240px;
+  }
+  @include desktop {
+    padding-top: 200px;
+    margin-right: 300px;
+  }
+}
+.layout{
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .is-size-2 {

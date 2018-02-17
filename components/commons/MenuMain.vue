@@ -33,6 +33,8 @@
             transform: rotate(5deg);
             text-align: right;
             transition: 0.3s ease-in-out;
+            line-height: 24px;
+            margin-bottom: 16px;
             &:hover {
                  color: $red;
                 transform: rotate(-1deg);

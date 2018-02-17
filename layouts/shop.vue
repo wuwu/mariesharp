@@ -9,7 +9,7 @@
         <nuxt/>
         <page-footer></page-footer>
         <button-scroll-top></button-scroll-top>
-        <debug-info></debug-info>
+        <debug-info v-if="debug === 'true'" class="debug"></debug-info>
     </div>
 </template>
 
@@ -31,36 +31,38 @@
       },
       data: function () {
         return {
-          active: false
+          active: false,
+          debug: process.env.debug
         }
       },
     }
 </script>
 <style lang="scss" scoped>
-    .columns {
-        max-width: 960px;
-        margin: 0 auto;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-    }
+
     .layout--shop {
-        min-height: 100vh;
         background-image: url('~/assets/images/background-image-2.jpg');
-        background-size: cover;
-        background-attachment: fixed;
     }
-    .main {
-        padding-top: 180px;
-    }
+
     .menu {
         display: none;
-        width: 360px;
         position: absolute;
         right: 0;
         top: 80px;
+        z-index: 500;
         @include tablet {
+            position: fixed;
+            top: 180px;
             display: flex;
             flex-direction: column;
+            width: 240px;
         }
+
+        @include desktop {
+            width: 360px;
+        }
+    }
+    .debug {
+        background-color: rgba($white, 0.5);
+        padding: 4px;
     }
 </style>

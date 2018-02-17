@@ -51,8 +51,9 @@
     .navbar-brand {
         flex-grow: 2;
         display: flex;
-        justify-content: flex-end;
-        padding-right: 3.25rem;
+        justify-content: center;
+        padding-left: 3.25rem;
+        padding-right: 0;
 
     }
     .navbar-burger {

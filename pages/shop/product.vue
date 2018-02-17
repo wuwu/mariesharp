@@ -1,6 +1,6 @@
 <template>
     <div class="page page--product container">
-        <div class="columns">
+        <div class="columns is-mobile">
             <div class="column is-one-third product--image">
                 <figure>
                     <img :src="`..${product.thumbnail}`" :alt="product.title"/>
@@ -8,11 +8,11 @@
             </div>
             <div class="column is-two-thirds product--information">
                 <h1>{{ product.title }}</h1>
-                <nuxtent-body :body="product.body" class="description"/>
+                <vue-markdown :source="product.body"></vue-markdown>
                 <piquancy-index :index="product.piquancy"></piquancy-index>
                 <vue-markdown :source="product.ingredients"></vue-markdown>
                 <tax-infos></tax-infos>
-                <pre>{{ product }}</pre>
+                <pre v-if="debug ==='true'">{{ product }}</pre>
             </div>
         </div>
     </div>
@@ -27,6 +27,12 @@
       PiquancyIndex,
       TaxInfos
     },
+    data: function () {
+      return {
+        active: false,
+        debug: process.env.debug
+      }
+    },
     async asyncData ({ app, route }) {
       return {
         product: await app.$content('/products').get(route.params.slug)
@@ -38,14 +44,20 @@
     h1 {
         color: $red;
         font-size: 32px;
+        text-shadow: 1px 2px 0 $white;
     }
     .column {
         display: flex;
     }
     .product--image {
-        justify-content: flex-end;
+        justify-content: center;
     }
     .product--information {
         flex-direction: column;
+    }
+    @include tablet {
+        .product--image {
+            justify-content: flex-end;
+        }
     }
 </style>

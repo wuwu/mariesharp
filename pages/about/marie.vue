@@ -1,5 +1,5 @@
 <template>
-    <div class="page">
+    <div class="container page">
         <figure>
             <img src="~/assets/images/MarieSharps_Carribean_Smiles_ueber-uns1.png"/>
         </figure>

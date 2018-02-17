@@ -19,7 +19,7 @@
         height: auto;
 
         @include tablet {
-            max-width: 380px;
+            max-width: 300px;
         }
     }
 </style>

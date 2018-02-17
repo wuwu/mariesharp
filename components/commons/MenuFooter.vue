@@ -1,20 +1,24 @@
 <template>
-    <div class="menu--footer">
-    <ul class="menu menu--footer-main">
-        <li><nuxt-link to="/">Home</nuxt-link></li>
-        <li><nuxt-link to="/merch">Restaurant/Händler</nuxt-link></li>
-        <li><nuxt-link to="/download">Download</nuxt-link></li>
-        <li><nuxt-link to="/impressum">Impressum</nuxt-link></li>
-        <li><nuxt-link to="/agb">AGB</nuxt-link></li>
-        <li><nuxt-link to="/kontakt">Kontakt</nuxt-link></li>
-    </ul>
-    <ul class="menu menu--footer-secondary">
-        <li><nuxt-link to="/widerrufsbelehrung">Widerrufsbelehrung</nuxt-link></li>
-        <li><nuxt-link to="/download/widerrufsbelehrung">Muster-Widerrufsbelehrung</nuxt-link></li>
-        <li><nuxt-link to="/lieferbedingungen">Lieferbedingungen</nuxt-link></li>
-        <li><nuxt-link to="/datenschutz">Datenschutz</nuxt-link></li>
-        <li><nuxt-link to="/online-streitschlichter">Online-Streitschlichtungsplattform</nuxt-link></li>
-    </ul>
+    <div class="footer">
+        <div class="menu--footer">
+            <div class="column">
+                <ul class="menu menu--footer-main">
+                    <li><nuxt-link to="/">Home</nuxt-link></li>
+                    <li><nuxt-link to="/merch">Restaurant/Händler</nuxt-link></li>
+                    <li><nuxt-link to="/download">Download</nuxt-link></li>
+                    <li><nuxt-link to="/impressum">Impressum</nuxt-link></li>
+                    <li><nuxt-link to="/agb">AGB</nuxt-link></li>
+                    <li><nuxt-link to="/kontakt">Kontakt</nuxt-link></li>
+                </ul>
+                <ul class="menu menu--footer-secondary">
+                    <li><nuxt-link to="/widerrufsbelehrung">Widerrufsbelehrung</nuxt-link></li>
+                    <li><nuxt-link to="/download/widerrufsbelehrung">Muster-Widerrufsbelehrung</nuxt-link></li>
+                    <li><nuxt-link to="/lieferbedingungen">Lieferbedingungen</nuxt-link></li>
+                    <li><nuxt-link to="/datenschutz">Datenschutz</nuxt-link></li>
+                    <li><nuxt-link to="/online-streitschlichter">Online-Streitschlichtungsplattform</nuxt-link></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 <script type="text/babel">
@@ -23,6 +27,11 @@
   }
 </script>
 <style lang="scss" scoped>
+    .footer {
+        max-width: 768px;
+        margin: 0 auto;
+        background: transparent;
+    }
     .menu--footer {
         background: url('~/assets/images/background-footer.png');
         background-repeat: no-repeat;
@@ -33,7 +42,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
+        margin-bottom: 16px;
         a {
             color: $grey;
             background-color: transparent;
@@ -48,7 +57,7 @@
         }
     }
     .menu--footer-main a {
-        padding-top: 12px;
+        padding-top: 2px;
         font-size: 16px;
         color: $white-ter;
         &:hover {
@@ -57,11 +66,7 @@
     }
     .menu--footer-secondary a {
         font-size: 13px;
-        color: $grey-light;
+        color: $dark;
     }
-    @include desktop {
-        li {
-            margin-bottom: 8px;
-        }
-    }
+
 </style>

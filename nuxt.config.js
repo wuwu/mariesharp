@@ -1,8 +1,12 @@
 const pkg = require('./package')
+require('dotenv').config()
 
 module.exports = {
   mode: 'spa',
 
+  env: {
+    debug: process.env.debug
+  },
   /*
   ** Headers of the page
   */
