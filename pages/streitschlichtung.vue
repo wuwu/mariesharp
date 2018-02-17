@@ -11,7 +11,7 @@
 export default {
   layout: 'info',
   asyncData: async ({ app }) => ({
-    post: await app.$content('/pages').get('/widerrufsbelehrung')
+    post: await app.$content('/pages').get('/streitschlichtung')
   })
 }
 </script>
