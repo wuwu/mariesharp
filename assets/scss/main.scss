@@ -9,6 +9,7 @@
 html {
   background-color: $white-ter;
 }
+
 body {
   font-family: 'Permanent Marker', cursive;
   line-height: 1.45;
@@ -19,8 +20,13 @@ body {
   margin: 0 auto;
   font-size: 20px;
 }
+
 p {
   font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.page {
+  padding-top: 160px;
 }
 
 .is-size-2 {

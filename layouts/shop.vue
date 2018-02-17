@@ -6,12 +6,7 @@
                 <menu-main></menu-main>
             </div>
         </div>
-        <div class="columns">
-            <div class="column main">
-                <nuxt/>
-            </div>
-        </div>
-
+        <nuxt/>
         <page-footer></page-footer>
         <button-scroll-top></button-scroll-top>
         <debug-info></debug-info>
