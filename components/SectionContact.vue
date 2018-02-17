@@ -15,7 +15,7 @@
     </section>
 </template>
 <script type="text/babel">
-  import Logo from '~/components/Logo.vue'
+  import Logo from '~/components/commons/Logo.vue'
   export default {
     name: 'Massage',
     components: {

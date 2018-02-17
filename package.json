@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^4.5.0",
-    "bulma": "0.5.1",
+    "@nuxtjs/router": "^1.0.1",
+    "bulma": "^0.6.1",
     "netlify-cms": "^1.0.2",
     "nuxt": "1.0.0-rc11",
     "nuxtent": "latest"
@@ -30,12 +31,16 @@
     "eslint-plugin-promise": "^3.4.1",
     "eslint-plugin-standard": "^2.0.1",
     "eslint-plugin-vue": "^4.2.2",
+    "moment": "^2.19.4",
     "node-sass": "^4.7.2",
     "nuxt-netlify-cms": "^2.0.1",
     "nuxt-sass-resources-loader": "^1.1.1",
+    "path": "^0.12.7",
     "sass-loader": "^6.0.6",
     "vue-markdown": "^2.2.4",
-    "vue-scrollto": "^2.8.0"
+    "vue-mq": "^0.1.0",
+    "vue-scrollto": "^2.8.0",
+    "vuex-router-sync": "^5.0.0"
   },
   "config": {
     "nuxt": {

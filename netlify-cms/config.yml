@@ -1,23 +1,74 @@
 backend:
   name: github
   repo: wuwu/mariesharp
-  branch: netlify-cms
+  branch: development
   # publish_mode: editorial_workflow
   # display_url: http://localhost:4500
 
-media_folder: "static/uploads"
+media_folder: static/uploads
+public_folder: uploads
 
 collections: # A list of collections the CMS should be able to edit
+  - label: "Blog"
+    name: "blog"
+    folder: "content/posts"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Produkte"
+    name: "products"
+    folder: "content/products"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "SKU", name: "sku", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Kategorie", name: "category", widget: "select", options: [ {label: "Die Klassischen", value: 1 }, {label: "Die Extra Schrafen", value: 2 }, {label: "Die Fruchtigen", vlaue: 3 }, {label: "Special Editions", value: 4 }, {label: "other", value: 5}]}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Piquancy Factor", name: "piquancy", widget: "number"}
+      - {label: "Zutaten", name: "ingredients", widget: "markdown"}
+      - {label: "Preis - klein", name: "priceSmall", widget: "number"}
+      - {label: "Preis - groß", name: "priceLarge", widget: "number", required: false}
+      - {label: "Image - Mähwerttabelle", name: "nutrition", widget: "image"}
+
   - label: Pages
     name: pages
     create: false
     delete: false
     files:
+      - label: Streitschlichtungsplattform
+        name: streitschlichtung
+        delete: false
+        file: content/pages/streitschlichtung.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Text, name: text, widget: markdown, required: false}
+      - label: Widerrufsbelehrung
+        name: widerrufsbelehrung
+        delete: false
+        file: content/pages/widerrufsbelehrung.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Text, name: text, widget: markdown, required: false}
 
-      - label: Datenschutz / Impressum
+      - label: Datenschutz
         name: datenschutz
         delete: false
         file: content/pages/datenschutz.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Text, name: text, widget: markdown, required: false}
+        meta:
+          - {label: SEO Description, name: description, widget: text}
+
+      - label: Impressum
+        name: impressum
+        delete: false
+        file: content/pages/impressum.yml
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Text, name: text, widget: markdown, required: false}
@@ -29,73 +80,51 @@ collections: # A list of collections the CMS should be able to edit
         delete: false
         file: content/pages/contact.yml
         fields:
-          - {label: Image, name: image, widget: image, required: false, tagname:"" }
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string, required: false}
           - {label: Text, name: text, widget: markdown, required: false}
         meta:
           - {label: SEO Description, name: description, widget: text}
 
-      - label: Extra Treatments
-        name: extratreatments
+      - label: Lieferbedingungen
+        name: lieferbedingungen
         delete: false
-        file: content/pages/extra.yml
+        file: content/pages/lieferbedingungen.yml
         fields:
-          - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - label: Treatment
-            name: treatment
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: markdown}
-        meta:
-          - {label: SEO Description, name: description, widget: text}
-
-      - label: Wellness Massagen
-        name: wellness
-        delete: false
-        file: content/pages/wellness.yml
-        fields:
-          - {label: Image, name: image, widget: image, required: false, tagname: ""}
-          - {label: Title, name: title, widget: string}
-          - label: Treatment
-            name: treatment
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: markdown}
-        meta:
-          - {label: SEO Description, name: description, widget: text}
-
-      - label: Gesichtsbehandlungen
-        name: facial
-        delete: false
-        file: content/pages/facial.yml
-        fields:
-          - {label: Image, name: image, widget: image, required: false, tagname: ""}
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: text}
-          - label: Treatment
-            name: treatment
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: markdown}
-        meta:
-          - {label: SEO Description, name: description, widget: text}
-
-      - label: Hautdiagnose
-        name: hautdiagnose
-        delete: false
-        file: content/pages/skin.yml
-        fields:
-          - {label: Image, name: image, widget: image, required: false, tagname: ""}
-          - {label: Title, name: title, widget: string}
-          - {label: Sektion Intro, name: intro, widget: text, required: false}
           - {label: Text, name: text, widget: markdown, required: false}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+
+      - label: Im Laden kaufen
+        name: laden
+        delete: false
+        file: content/pages/laden.yml
+        fields:
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Body", name: "body", widget: "markdown"}
         meta:
           - {label: SEO Description, name: description, widget: text}
+
+      - label: All Natural
+        name: allnatural
+        delete: false
+        file: content/pages/allnatural.yml
+        fields:
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: "Body", name: "body", widget: "markdown"}
+        meta:
+          - {label: SEO Description, name: description, widget: text}
+
+      - label: Impressum
+        name: impressum
+        delete: false
+        file: content/pages/impressum.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Text, name: text, widget: markdown, required: false}
 
       - label: About
         name: about

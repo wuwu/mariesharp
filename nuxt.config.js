@@ -1,8 +1,12 @@
 const pkg = require('./package')
+require('dotenv').config()
 
 module.exports = {
   mode: 'spa',
 
+  env: {
+    debug: process.env.debug
+  },
   /*
   ** Headers of the page
   */
@@ -17,7 +21,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i,700,700i' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Gochi+Hand|Molle:400i|Permanent+Marker|Rock+Salt|Schoolbell|Sedgwick+Ave+Display' }
     ],
     script: [
       {
@@ -26,7 +30,15 @@ module.exports = {
       },
     ],
   },
-
+  extend(config, { isServer }) {
+    if (isServer) {
+      config.externals = [
+        nodeExternals({
+          whitelist: [/\.(?!(?:js|json)$).{1,5}$/i, [/^vue-awesome/, /^vue-bulma/]]
+        })
+      ]
+    }
+  },
   /*
   ** Customize the progress-bar color
   */
@@ -44,6 +56,7 @@ module.exports = {
   */
   plugins: [
     '~plugins/vue-scrollto.js',
+    '~plugins/breakpoints.js',
     '~plugins/markdown-helpers.js',
     { src: '~/plugins/vue-markdown.js', ssr: false }
 
@@ -56,6 +69,7 @@ module.exports = {
     ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
     'nuxt-netlify-cms',
     'nuxtent',
+    '@nuxtjs/router',
   ],
   /*
   ** Build configuration
@@ -64,10 +78,11 @@ module.exports = {
     vendor: ['vue-markdown'],
     postcss: [
       require('autoprefixer')({
-        browsers: ['> 5%'],
+        browsers: ['last 2 versions', 'ie >= 9', 'Android >= 2.3', 'ios >= 7'],
         grid: true
-      })
+      }),
     ],
+
     /*
     ** You can extend webpack config here
     */
@@ -93,10 +108,16 @@ module.exports = {
         {
           page: '/_slug',
           permalink: '/:slug',
-          isPost: false,
           generate: ['get', 'getAll'],
+          isPost: false,
         },
       ],
+      ["products", {
+        page: '/shop/_slug',
+        permalink: ":slug",
+        isPost: false,
+        generate: ['get', 'getAll'],
+      }]
     ],
   },
 }

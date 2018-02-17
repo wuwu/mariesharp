@@ -1,26 +1,25 @@
 <template>
-    <div class="wrapper">
-        <logo></logo>
+    <div class="page">
+        <figure>
+            <img src="~/assets/images/Marie-Sharps-Home_Exotic_Sweet-Pepper.png"/>
+        </figure>
     </div>
 </template>
 
 <script type="text/babel">
-import Logo from '~/components/Logo.vue'
 
 export default {
+  layout: 'shop',
   components: {
-    Logo
-  }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 
-.wrapper {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .page {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 
 </style>

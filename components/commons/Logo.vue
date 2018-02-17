@@ -15,7 +15,11 @@
         }
     }
     img {
-        max-width: 360px;
+        max-width: 240px;
         height: auto;
+
+        @include tablet {
+            max-width: 300px;
+        }
     }
 </style>
