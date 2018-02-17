@@ -14,10 +14,11 @@
 
 <script>
   export default {
+    name: 'laden',
     layout: "shop",
     async asyncData ({ app, route }) {
       return {
-        post: await app.$content('/pages').get('/allnatural')
+        post: await app.$content('/pages').get('/imladen')
       }
     }
   }

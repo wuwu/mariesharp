@@ -51,7 +51,10 @@ p {
 .is-size-2 {
   font-size: 2.6rem;
 }
-
+.has-text-marie {
+  color: $red;
+  text-shadow: 1px 2px 1px $black;
+}
 .font1 {
   font-family: 'Sedgwick Ave Display', cursive;
 }
