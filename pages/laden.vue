@@ -2,6 +2,7 @@
     <div class="page page--product container">
         <div class="columns is-mobile">
             <div class="column is-12">
+                <h1>{{hasImage}}</h1>
                 <figure>
                     <img :src="`..${post.body.image}`" :alt="post.title"/>
                 </figure>
@@ -16,6 +17,11 @@
   export default {
     name: 'laden',
     layout: "shop",
+    computed: {
+      hasImage() {
+        return this.post.body.image.length
+      }
+    },
     async asyncData ({ app, route }) {
       return {
         post: await app.$content('/pages').get('/laden')
