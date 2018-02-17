@@ -1,7 +1,5 @@
 <template>
-    <div class="wrapper">
-        <logo/>
-        <div class="container">
+    <div class="page page--info container">
             <h2 class="title is-size-2 has-text-primary">{{post.body.title}}</h2>
             <vue-markdown :source="post.body.text"></vue-markdown>
             <nuxt-link to="/" class="button primary">zur Startseite</nuxt-link>
@@ -10,12 +8,9 @@
 </template>
 
 <script>
-import Logo from '~/components/commons/Logo.vue'
 
 export default {
-  components: {
-    Logo
-  },
+  layout: 'info',
   asyncData: async ({ app }) => ({
     post: await app.$content('/pages').get('/lieferbedingungen')
   })

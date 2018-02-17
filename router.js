@@ -4,9 +4,10 @@ import Front from '~/pages/index'
 import About from '~/pages/about/marie'
 import Friends from '~/pages/friends/mr-nowimps'
 import Shop from '~/pages/shop'
-import Product from '~/pages/shop/Product'
-import Lieferbedingungen from '~/pages/Lieferbedingungen'
-import Impressum from '~/pages/Impressum'
+import Product from '~/pages/shop/product'
+import Lieferbedingungen from '~/pages/lieferbedingungen'
+import Impressum from '~/pages/impressum'
+import Kontakt from '~/pages/contact'
 
 
 Vue.use(Router)
@@ -19,6 +20,7 @@ export function createRouter () {
       { path: '/about', component: About, name: 'about' },
       { path: '/friends', component: Friends, name: 'friends' },
       { path: '/lieferbedingungen', component: Lieferbedingungen, name: 'lieferbedingungen' },
+      { path: '/kontakt', component: Kontakt, name: 'kontakt' },
       { path: '/impressum', component: Impressum, name: 'impressum' },
       { path: '/shop', component: Shop, name: 'shop' },
       { path: '/:shop/:slug', name: 'product', component: Product }
