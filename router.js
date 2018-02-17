@@ -5,6 +5,7 @@ import About from '~/pages/about/marie'
 import Friends from '~/pages/friends/mr-nowimps'
 import Shop from '~/pages/shop'
 import Product from '~/pages/shop/Product'
+import Lieferbedingungen from '~/pages/Lieferbedingungen'
 
 
 Vue.use(Router)
@@ -16,8 +17,9 @@ export function createRouter () {
       { path: '/', component: Front, name: 'front' },
       { path: '/about', component: About, name: 'about' },
       { path: '/friends', component: Friends, name: 'friends' },
+      { path: '/lieferbedingungen', component: Lieferbedingungen, name: 'lieferbedingungen' },
       { path: '/shop', component: Shop, name: 'shop' },
-      { path: '/:shop/:slug', name: 'Product', component: Product }
+      { path: '/:shop/:slug', name: 'product', component: Product }
     ],
     scrollBehavior (to, from, savedPosition) {
       // return desired position

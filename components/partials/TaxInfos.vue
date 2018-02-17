@@ -1,5 +1,5 @@
 <template>
-    <p>Preise inkl.7% MwSt zzgl. <nuxt-link to="/versandkosten">Fracht- / Versandkosten</nuxt-link></p>
+    <p>Preise inkl.7% MwSt zzgl. <nuxt-link to="/lieferbedingungen">Fracht- / Versandkosten</nuxt-link></p>
 </template>
 
 <script type="text/babel">
