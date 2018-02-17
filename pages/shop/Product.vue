@@ -10,7 +10,7 @@
                 <h1>{{ product.title }}</h1>
                 <nuxtent-body :body="product.body" class="description"/>
                 <piquancy-index :index="product.piquancy"></piquancy-index>
-                <nuxtent-body :body="product.ingredients" class="ingredients"/>
+                <vue-markdown :source="product.ingredients"></vue-markdown>
                 <tax-infos></tax-infos>
                 <pre>{{ product }}</pre>
             </div>

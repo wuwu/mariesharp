@@ -6,6 +6,7 @@ import Friends from '~/pages/friends/mr-nowimps'
 import Shop from '~/pages/shop'
 import Product from '~/pages/shop/Product'
 import Lieferbedingungen from '~/pages/Lieferbedingungen'
+import Impressum from '~/pages/Impressum'
 
 
 Vue.use(Router)
@@ -18,6 +19,7 @@ export function createRouter () {
       { path: '/about', component: About, name: 'about' },
       { path: '/friends', component: Friends, name: 'friends' },
       { path: '/lieferbedingungen', component: Lieferbedingungen, name: 'lieferbedingungen' },
+      { path: '/impressum', component: Impressum, name: 'impressum' },
       { path: '/shop', component: Shop, name: 'shop' },
       { path: '/:shop/:slug', name: 'product', component: Product }
     ],
