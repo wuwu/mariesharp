@@ -10,7 +10,7 @@
 export default {
   layout: 'info',
   asyncData: async ({ app }) => ({
-    post: await app.$content('/pages').get('/lieferbedingungen')
+    post: await app.$content('/pages').get('/datenschutz')
   })
 }
 </script>

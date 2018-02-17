@@ -8,6 +8,7 @@ import Product from '~/pages/shop/product'
 import AllNatural from '~/pages/allnatural'
 import Laden from '~/pages/laden'
 import Lieferbedingungen from '~/pages/lieferbedingungen'
+import Datenschutz from '~/pages/datenschutz'
 import Impressum from '~/pages/impressum'
 import Kontakt from '~/pages/contact'
 
@@ -25,6 +26,7 @@ export function createRouter () {
       { path: '/laden', component: Laden, name: 'imladen' },
       { path: '/lieferbedingungen', component: Lieferbedingungen, name: 'lieferbedingungen' },
       { path: '/kontakt', component: Kontakt, name: 'kontakt' },
+      { path: '/datenschutz', component: Datenschutz, name: 'datenschutz' },
       { path: '/impressum', component: Impressum, name: 'impressum' },
       { path: '/shop', component: Shop, name: 'shop' },
       { path: '/:shop/:slug', name: 'product', component: Product }
