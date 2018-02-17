@@ -24,6 +24,8 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "SKU", name: "sku", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Kategorie", name: "category", widget: "select", options: [ {label: "Die Klassischen", value: 1 }, {label: "Die Extra Schrafen", value: 2 }, {label: "Die Fruchtigen", vlaue: 3 }, {label: "Special Editions", value: 4 }, {label: "other", value: 5}]}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -32,7 +34,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Preis - klein", name: "priceSmall", widget: "number"}
       - {label: "Preis - groß", name: "priceLarge", widget: "number", required: false}
       - {label: "Image - Mähwerttabelle", name: "nutrition", widget: "image"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
 
   - label: Pages
     name: pages
