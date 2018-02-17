@@ -5,7 +5,8 @@ backend:
   # publish_mode: editorial_workflow
   # display_url: http://localhost:4500
 
-media_folder: "uploads"
+media_folder: static/uploads
+public_folder: uploads
 
 collections: # A list of collections the CMS should be able to edit
   - label: "Blog"
