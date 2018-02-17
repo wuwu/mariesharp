@@ -18,7 +18,7 @@
     layout: "shop",
     async asyncData ({ app, route }) {
       return {
-        post: await app.$content('/pages').get('/imladen')
+        post: await app.$content('/pages').get('/laden')
       }
     }
   }
