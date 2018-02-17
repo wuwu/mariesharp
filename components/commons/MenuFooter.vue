@@ -12,7 +12,7 @@
                 </ul>
                 <ul class="menu menu--footer-secondary">
                     <li><nuxt-link to="/widerrufsbelehrung">Widerrufsbelehrung</nuxt-link></li>
-                    <li><nuxt-link to="/download/widerrufsbelehrung">Muster-Widerrufsbelehrung</nuxt-link></li>
+                    <li><nuxt-link to="/pdf/muster-widerrufsformular.pdf" target="_blank">Muster-Widerrufsbelehrung</nuxt-link></li>
                     <li><nuxt-link to="/lieferbedingungen">Lieferbedingungen</nuxt-link></li>
                     <li><nuxt-link to="/datenschutz">Datenschutz</nuxt-link></li>
                     <li><nuxt-link to="/online-streitschlichter">Online-Streitschlichtungsplattform</nuxt-link></li>
