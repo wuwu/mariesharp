@@ -74,7 +74,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Im Laden kaufen
         name: laden
         delete: false
-        file: content/pages/imladen.yml
+        file: content/pages/laden.yml
         fields:
           - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
