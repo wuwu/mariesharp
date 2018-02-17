@@ -9,6 +9,7 @@ import AllNatural from '~/pages/allnatural'
 import Laden from '~/pages/laden'
 import Lieferbedingungen from '~/pages/lieferbedingungen'
 import Datenschutz from '~/pages/datenschutz'
+import Widerrufsbelehrung from '~/pages/widerrufsbelehrung'
 import Impressum from '~/pages/impressum'
 import Kontakt from '~/pages/contact'
 
@@ -27,6 +28,7 @@ export function createRouter () {
       { path: '/lieferbedingungen', component: Lieferbedingungen, name: 'lieferbedingungen' },
       { path: '/kontakt', component: Kontakt, name: 'kontakt' },
       { path: '/datenschutz', component: Datenschutz, name: 'datenschutz' },
+      { path: '/widerrufsbelehrung', component: Widerrufsbelehrung, name: 'widerrufsbelehrung' },
       { path: '/impressum', component: Impressum, name: 'impressum' },
       { path: '/shop', component: Shop, name: 'shop' },
       { path: '/:shop/:slug', name: 'product', component: Product }
