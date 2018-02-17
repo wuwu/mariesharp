@@ -1,7 +1,7 @@
 ---
 title: Marie Sharp's NO WIMPS ALLOWED
 select: Die Extra Schrafen
-thumbnail: /static/uploads/marie-sharp-habanero-pepper-sauce-nowimpsallowed.png
+thumbnail: /uploads/marie-sharp-habanero-pepper-sauce-nowimpsallowed.png
 piquancy: '7'
 ingredients: >-
   Rote/red Habanero Chilis (50%), Essig/vinegar, Karotten/carrots, Salz/salt,
