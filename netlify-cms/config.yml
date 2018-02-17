@@ -87,20 +87,14 @@ collections: # A list of collections the CMS should be able to edit
         meta:
           - {label: SEO Description, name: description, widget: text}
 
-      - label: Gesichtsbehandlungen
-        name: facial
+      - label: All Natural
+        name: allnatural
         delete: false
-        file: content/pages/facial.yml
+        file: content/pages/allnatural.yml
         fields:
           - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: text}
-          - label: Treatment
-            name: treatment
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: markdown}
+          - {label: "Body", name: "body", widget: "markdown"}
         meta:
           - {label: SEO Description, name: description, widget: text}
 

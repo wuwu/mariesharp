@@ -5,6 +5,7 @@ import About from '~/pages/about/marie'
 import Friends from '~/pages/friends/mr-nowimps'
 import Shop from '~/pages/shop'
 import Product from '~/pages/shop/product'
+import AllNatural from '~/pages/allnatural'
 import Lieferbedingungen from '~/pages/lieferbedingungen'
 import Impressum from '~/pages/impressum'
 import Kontakt from '~/pages/contact'
@@ -19,6 +20,7 @@ export function createRouter () {
       { path: '/', component: Front, name: 'front' },
       { path: '/about', component: About, name: 'about' },
       { path: '/friends', component: Friends, name: 'friends' },
+      { path: '/all-natural', component: AllNatural, name: 'allnatural' },
       { path: '/lieferbedingungen', component: Lieferbedingungen, name: 'lieferbedingungen' },
       { path: '/kontakt', component: Kontakt, name: 'kontakt' },
       { path: '/impressum', component: Impressum, name: 'impressum' },
