@@ -24,7 +24,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Kategorie", name: "select", widget: "select", options: ["Die Klassischen", "Die Extra Schrafen", "Die Fruchtigen", "Special Editions", "other"]}
+      - {label: "Kategorie", name: "category", widget: "select", options: [ {label: "Die Klassischen", value: 1 }, {label: "Die Extra Schrafen", value: 2 }, {label: "Die Fruchtigen", vlaue: 3 }, {label: "Special Editions", value: 4 }, {label: "other", value: 5}]}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Piquancy Factor", name: "piquancy", widget: "number"}
