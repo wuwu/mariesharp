@@ -25,12 +25,10 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "SKU", name: "sku", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Kategorie", name: "category", widget: "select", options: [ {label: "Die Klassischen", value: 1 }, {label: "Die Extra Schrafen", value: 2 }, {label: "Die Fruchtigen", vlaue: 3 }, {label: "Special Editions", value: 4 }, {label: "other", value: 5}]}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Piquancy Factor", name: "piquancy", widget: "number"}
-      - {label: "Zutaten", name: "ingredients", widget: "markdown"}
+      - {label: "Kategorie", name: "category", widget: "select", options: [ {label: "Die Klassischen", value: 1 }, {label: "Die Extra Schrafen", value: 2 }, {label: "Die Fruchtigen", vlaue: 3 }, {label: "Special Editions", value: 4 }, {label: "other", value: 5}]}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - label: "Flaschen Größe / Preis"
         name: "price"
         widget: "list"
@@ -38,6 +36,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Size", name: "size", widget: "select", options: [ {label: "148ml", value: small }, {label: "296ml", value: medium }]}
           - {label: "Preis", name: "price", widget: "number"}
           - {label: "Preis per 100ml", name: "priceaverage", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Zutaten", name: "ingredients", widget: "markdown"}
 
   - label: Pages
     name: pages
