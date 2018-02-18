@@ -1,5 +1,5 @@
 <template>
-    <ul class="menu">
+    <ul v-if="showMenu" class="menu">
         <li><nuxt-link to="/">Home</nuxt-link></li>
         <li><nuxt-link to="/about">Über uns</nuxt-link></li>
         <li><nuxt-link to="/shop">Shop</nuxt-link></li>
@@ -9,8 +9,14 @@
     </ul>
 </template>
 <script type="text/babel">
+  import { mapGetters } from 'vuex'
   export default {
     name: 'Menu',
+    computed: {
+      ...mapGetters([
+        'showMenu'
+      ]),
+    }
   }
 </script>
 <style lang="scss" scoped>
