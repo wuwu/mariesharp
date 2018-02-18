@@ -117,12 +117,12 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Publish Date", name: "date", widget: "datetime"}
           - {label: "Body", name: "body", widget: "markdown"}
           - label: "Merch Article"
-                  name: "mercharticle"
-                  widget: "object"
-                  fields:
-                    - {label: "Image", name: "image", widget: "image"}
-                    - {label: "Name", name: "title", widget: "string"}
-                    - {label: "Text", name: "body", widget: "markdown"}
+            name: "mercharticle"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Name", name: "title", widget: "string"}
+              - {label: "Text", name: "body", widget: "markdown"}
         meta:
           - {label: SEO Description, name: description, widget: text}
 
