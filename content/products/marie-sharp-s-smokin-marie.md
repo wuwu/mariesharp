@@ -1,6 +1,6 @@
 ---
 title: Marie Sharp's SMOKIN MARIE
-sku: 13-MS-SMO
+sku: 13-MS-SMOMAR
 piquancy: '10'
 category: '4'
 date: 2018-02-15T23:00:00.000Z
