@@ -70,6 +70,7 @@ module.exports = {
     'nuxt-netlify-cms',
     'nuxtent',
     '@nuxtjs/router',
+    'nuxt-vuex-router-sync',
   ],
   /*
   ** Build configuration
