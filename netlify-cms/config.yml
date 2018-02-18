@@ -35,9 +35,9 @@ collections: # A list of collections the CMS should be able to edit
         name: "price"
         widget: "list"
         fields:
-          - {label: "Kategorie", name: "size", widget: "select", options: [ {label: "148ml", value: small }, {label: "296ml", value: medium }]}
+          - {label: "Size", name: "size", widget: "select", options: [ {label: "148ml", value: small }, {label: "296ml", value: medium }]}
           - {label: "Preis", name: "price", widget: "number"}
-          - {label: "per 100ml", name: "priceaverage", widget: "string"}
+          - {label: "Preis per 100ml", name: "priceaverage", widget: "string"}
 
   - label: Pages
     name: pages
