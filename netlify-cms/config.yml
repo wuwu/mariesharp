@@ -107,6 +107,25 @@ collections: # A list of collections the CMS should be able to edit
         meta:
           - {label: SEO Description, name: description, widget: text}
 
+      - label: Merchandise
+        name: merchandise
+        delete: false
+        file: content/pages/merchandise.yml
+        fields:
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Merch Article"
+                  name: "mercharticle"
+                  widget: "object"
+                  fields:
+                    - {label: "Image", name: "image", widget: "image"}
+                    - {label: "Name", name: "title", widget: "string"}
+                    - {label: "Text", name: "body", widget: "markdown"}
+        meta:
+          - {label: SEO Description, name: description, widget: text}
+
       - label: All Natural
         name: allnatural
         delete: false

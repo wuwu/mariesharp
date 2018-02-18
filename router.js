@@ -6,6 +6,7 @@ import Friends from '~/pages/friends/mr-nowimps'
 import Shop from '~/pages/shop'
 import Product from '~/pages/shop/product'
 import AllNatural from '~/pages/allnatural'
+import Merchandise from '~/pages/merchandise'
 import Laden from '~/pages/laden'
 import Lieferbedingungen from '~/pages/lieferbedingungen'
 import Datenschutz from '~/pages/datenschutz'
@@ -26,6 +27,7 @@ export function createRouter () {
       { path: '/friends', component: Friends, name: 'friends' },
       { path: '/all-natural', component: AllNatural, name: 'allnatural' },
       { path: '/laden', component: Laden, name: 'imladen' },
+      { path: '/merchandise', component: Merchandise, name: 'merchandise' },
       { path: '/lieferbedingungen', component: Lieferbedingungen, name: 'lieferbedingungen' },
       { path: '/kontakt', component: Kontakt, name: 'kontakt' },
       { path: '/datenschutz', component: Datenschutz, name: 'datenschutz' },
