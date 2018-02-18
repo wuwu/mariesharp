@@ -9,7 +9,7 @@ export const types = {
 const store = () => new Vuex.Store({
   state: {
     loading: false,
-    showMenu: false,
+    showMenu: true,
     isAdmin: process.env.IS_ADMIN,
     debug: process.env.debug
   },

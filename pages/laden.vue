@@ -16,11 +16,6 @@
   export default {
     name: 'laden',
     layout: "shop",
-    computed: {
-      hasImage() {
-        return this.post.body.image.length
-      }
-    },
     async asyncData ({ app, route }) {
       return {
         post: await app.$content('/pages').get('/laden')

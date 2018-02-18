@@ -30,7 +30,7 @@
         a {
             font-size: 2rem;
             color: $black;
-            background-color: rgba($white, .35);
+            background-color: rgba($white, 1);
             padding: 4px 32px 4px 8px;
             font-style: normal;
             font-weight: $weight-normal;
@@ -48,10 +48,13 @@
 
              }
         }
-    }
-    @include desktop {
-        li {
-            margin-bottom: 8px;
+        @include tablet {
+            li {
+                margin-bottom: 8px;
+            }
+            a {
+                background-color: rgba($white, .35);
+            }
         }
     }
 </style>

@@ -31,9 +31,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Piquancy Factor", name: "piquancy", widget: "number"}
       - {label: "Zutaten", name: "ingredients", widget: "markdown"}
-      - {label: "Preis - klein", name: "priceSmall", widget: "number"}
-      - {label: "Preis - groß", name: "priceLarge", widget: "number", required: false}
-      - {label: "Image - Mähwerttabelle", name: "nutrition", widget: "image"}
+      - label: "Flaschen Größe / Preis"
+        name: "price"
+        widget: "list"
+        fields:
+          - {label: "Kategorie", name: "size", widget: "select", options: [ {label: "148ml", value: small }, {label: "296ml", value: medium }]}
+          - {label: "Preis", name: "price", widget: "number"}
+          - {label: "per 100ml", name: "priceaverage", widget: "string"}
 
   - label: Pages
     name: pages
