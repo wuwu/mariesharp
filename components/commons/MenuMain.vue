@@ -5,7 +5,7 @@
         <li><nuxt-link to="/shop">Shop</nuxt-link></li>
         <li><nuxt-link to="/laden">Im Laden kaufen</nuxt-link></li>
         <li><nuxt-link to="/friends">Friends</nuxt-link></li>
-        <li><nuxt-link to="/all-natural">all Natural</nuxt-link></li>
+        <li><nuxt-link to="/allnatural">all Natural</nuxt-link></li>
     </ul>
 </template>
 <script type="text/babel">

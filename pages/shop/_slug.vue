@@ -34,10 +34,9 @@
         debug: process.env.debug
       }
     },
-    async asyncData ({ app, route }) {
-      console.log(route.params)
+    async asyncData ({ app, route, payload }) {
       return {
-        product: await app.$content('/products').get(route.params.slug)
+        product: await app.$content('/products').get(route.path) || payload
       }
     }
   }
