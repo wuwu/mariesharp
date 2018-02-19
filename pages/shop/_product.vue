@@ -35,7 +35,7 @@
     },
     async asyncData ({ app, route, payload }) {
       return {
-        product: await app.$content('/products').get(route.params.slug) || payload
+        product: await app.$content('/products').get('shop.'+route.params.slug) || payload
       }
     }
   }
