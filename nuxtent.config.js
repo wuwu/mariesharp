@@ -21,7 +21,7 @@ module.exports = {
   ],
   api: {
     baseURL: process.env.NODE_ENV === 'production'
-        ? 'http://mariesharp.zknft.de'
+        ? 'https://mariesharp.zknft.de'
         : 'http://localhost:4500'
   }
 }
