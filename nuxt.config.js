@@ -114,7 +114,7 @@ module.exports = {
         },
       ],
       ["products", {
-        page: '/shop/_slug',
+        page: '/shop/_product',
         permalink: ":slug",
         isPost: false,
         generate: ['get', 'getAll'],
