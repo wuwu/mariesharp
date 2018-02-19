@@ -1,16 +1,22 @@
 <template>
-    <ul class="menu">
+    <ul v-if="showMenu" class="menu">
         <li><nuxt-link to="/">Home</nuxt-link></li>
         <li><nuxt-link to="/about">Über uns</nuxt-link></li>
         <li><nuxt-link to="/shop">Shop</nuxt-link></li>
         <li><nuxt-link to="/laden">Im Laden kaufen</nuxt-link></li>
         <li><nuxt-link to="/friends">Friends</nuxt-link></li>
-        <li><nuxt-link to="/all-natural">all Natural</nuxt-link></li>
+        <li><nuxt-link to="/allnatural">all Natural</nuxt-link></li>
     </ul>
 </template>
 <script type="text/babel">
+  import { mapGetters } from 'vuex'
   export default {
     name: 'Menu',
+    computed: {
+      ...mapGetters([
+        'showMenu'
+      ]),
+    }
   }
 </script>
 <style lang="scss" scoped>
@@ -24,7 +30,7 @@
         a {
             font-size: 2rem;
             color: $black;
-            background-color: rgba($white, .35);
+            background-color: rgba($white, 1);
             padding: 4px 32px 4px 8px;
             font-style: normal;
             font-weight: $weight-normal;
@@ -42,10 +48,13 @@
 
              }
         }
-    }
-    @include desktop {
-        li {
-            margin-bottom: 8px;
+        @include tablet {
+            li {
+                margin-bottom: 8px;
+            }
+            a {
+                background-color: rgba($white, .35);
+            }
         }
     }
 </style>

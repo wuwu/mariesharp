@@ -44,11 +44,11 @@
     }
 
     .menu {
-        display: none;
         position: absolute;
         right: 0;
         top: 80px;
         z-index: 500;
+        width: 240px;
         @include tablet {
             position: fixed;
             top: 180px;

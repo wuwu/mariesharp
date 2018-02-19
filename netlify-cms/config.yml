@@ -25,15 +25,19 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "SKU", name: "sku", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Kategorie", name: "category", widget: "select", options: [ {label: "Die Klassischen", value: 1 }, {label: "Die Extra Schrafen", value: 2 }, {label: "Die Fruchtigen", vlaue: 3 }, {label: "Special Editions", value: 4 }, {label: "other", value: 5}]}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Piquancy Factor", name: "piquancy", widget: "number"}
+      - {label: "Kategorie", name: "category", widget: "select", options: [ {label: "Die Klassischen", value: 1 }, {label: "Die Extra Schrafen", value: 2 }, {label: "Die Fruchtigen", vlaue: 3 }, {label: "Special Editions", value: 4 }, {label: "other", value: 5}]}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - label: "Flaschen Größe / Preis"
+        name: "price"
+        widget: "list"
+        fields:
+          - {label: "Size", name: "size", widget: "select", options: [ {label: "148ml", value: small }, {label: "296ml", value: medium }]}
+          - {label: "Preis", name: "price", widget: "number"}
+          - {label: "Preis per 100ml", name: "priceaverage", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Zutaten", name: "ingredients", widget: "markdown"}
-      - {label: "Preis - klein", name: "priceSmall", widget: "number"}
-      - {label: "Preis - groß", name: "priceLarge", widget: "number", required: false}
-      - {label: "Image - Mähwerttabelle", name: "nutrition", widget: "image"}
 
   - label: Pages
     name: pages
@@ -104,6 +108,25 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: "Publish Date", name: "date", widget: "datetime"}
           - {label: "Body", name: "body", widget: "markdown"}
+        meta:
+          - {label: SEO Description, name: description, widget: text}
+
+      - label: Merchandise
+        name: merchandise
+        delete: false
+        file: content/pages/merchandise.yml
+        fields:
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Merch Article"
+            name: "mercharticle"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Name", name: "title", widget: "string"}
+              - {label: "Text", name: "body", widget: "markdown"}
         meta:
           - {label: SEO Description, name: description, widget: text}
 

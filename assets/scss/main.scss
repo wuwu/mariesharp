@@ -26,19 +26,16 @@ p {
 }
 
 .page {
-  padding: 130px 8px 0 8px;
-  padding-top: 130px;
+  padding: 0px 8px 0 8px;
   padding-left: $padding-mobile;
   padding-bottom: 0;
   padding-right: $padding-mobile;
   max-width: 768px;
   margin: 0 auto;
   @include tablet {
-    padding-top: 180px;
     margin-right: 240px;
   }
   @include desktop {
-    padding-top: 200px;
     margin-right: 300px;
   }
 }

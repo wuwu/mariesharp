@@ -4,7 +4,7 @@
             <div class="column">
                 <ul class="menu menu--footer-main">
                     <li><nuxt-link to="/">Home</nuxt-link></li>
-                    <li><nuxt-link to="/merch">Restaurant/Händler</nuxt-link></li>
+                    <li><nuxt-link to="/merchandise">Restaurant/Händler</nuxt-link></li>
                     <li><nuxt-link to="/download">Download</nuxt-link></li>
                     <li><nuxt-link to="/impressum">Impressum</nuxt-link></li>
                     <li><nuxt-link to="/agb">AGB</nuxt-link></li>
