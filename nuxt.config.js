@@ -115,7 +115,7 @@ module.exports = {
       ],
       ["products", {
         page: '/shop/_product',
-        permalink: '/shop/:slug',
+        permalink: '/:slug',
         isPost: false,
         generate: ['get', 'getAll'],
       }]
