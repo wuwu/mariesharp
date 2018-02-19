@@ -16,14 +16,14 @@
     "@nuxtjs/axios": "^4.5.0",
     "@nuxtjs/router": "^1.0.1",
     "bulma": "^0.6.1",
+    "cross-env": "^5.0.1",
+    "dotenv": "^5.0.0",
     "netlify-cms": "^1.0.2",
     "nuxt": "1.0.0-rc11",
     "nuxtent": "latest"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
-    "cross-env": "^5.0.1",
-    "dotenv": "^5.0.0",
     "eslint": "^4.17.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-html": "^2.0.0",
