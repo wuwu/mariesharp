@@ -10,6 +10,7 @@
                 <h1>{{ product.title }}</h1>
                 <vue-markdown :source="product.body"></vue-markdown>
                 <piquancy-index :index="product.piquancy"></piquancy-index>
+                <h3>Zutaten:</h3>
                 <vue-markdown :source="product.ingredients"></vue-markdown>
                 <tax-infos></tax-infos>
                 <pre v-if="debug ==='true'">{{ product }}</pre>

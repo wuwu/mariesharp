@@ -113,11 +113,13 @@ module.exports = {
           isPost: false,
         },
       ],
-      ["products", {
+      [
+        'products',
+        {
         page: '/shop/_slug',
-        permalink: ":slug",
-        isPost: false,
+        permalink: "shop/:slug",
         generate: ['get', 'getAll'],
+        isPost: false,
       }]
     ],
   },
