@@ -10,14 +10,12 @@ module.exports = {
         isPost: false,
       },
     ],
-    [
-      'products',
-      {
-        page: '/shop/_slug',
-        permalink: "/shop/:slug",
-        generate: ['get', 'getAll'],
-        isPost: false,
-      }]
+    ["products", {
+      page: '/shop/_product',
+      permalink: ":slug",
+      isPost: false,
+      generate: ['get', 'getAll'],
+    }]
   ],
   api: {
     baseURL: process.env.NODE_ENV === 'production'
