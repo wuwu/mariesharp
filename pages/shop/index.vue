@@ -2,9 +2,9 @@
     <section class="page">
         <div class="columns is-multiline is-mobile">
             <div v-for="product in products" class="column is-4-mobile is-3-tablet">
-                <nuxt-link :to="product.path">
+                <nuxt-link :to="product.permalink">
                     <figure>
-                        <img :src="`..${product.thumbnail}`"/>
+                        <img :src="`../${product.thumbnail}`"/>
                     </figure>
                     {{ product.title }}
                 </nuxt-link>
