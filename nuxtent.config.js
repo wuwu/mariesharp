@@ -12,7 +12,7 @@ module.exports = {
     ],
     ["products", {
       page: '/shop/_product',
-      permalink: ":slug",
+      permalink: "/:slug",
       isPost: false,
       generate: ['get', 'getAll'],
     }]
