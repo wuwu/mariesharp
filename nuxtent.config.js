@@ -13,8 +13,8 @@ module.exports = {
     [
       'products',
       {
-        page: '/_slug',
-        permalink: "/shop/:slug",
+        page: '/shop/_slug',
+        permalink: ":slug",
         generate: ['get', 'getAll'],
         isPost: false,
       }]
