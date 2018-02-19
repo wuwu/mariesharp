@@ -69,7 +69,6 @@ module.exports = {
     ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
     'nuxt-netlify-cms',
     'nuxtent',
-    '@nuxtjs/router',
     'nuxt-vuex-router-sync',
   ],
   /*
@@ -99,6 +98,7 @@ module.exports = {
       }
     }
   },
+
   /*
   ** Netlify CMS
   */
@@ -115,10 +115,10 @@ module.exports = {
       ],
       ["products", {
         page: '/shop/_product',
-        permalink: ":slug",
+        permalink: "/shop/:slug",
         isPost: false,
         generate: ['get', 'getAll'],
       }]
-    ],
-  },
+    ]
+  }
 }

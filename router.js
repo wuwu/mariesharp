@@ -22,6 +22,7 @@ export function createRouter () {
     mode: 'history',
     routes: [
       { path: '/', component: Front, name: 'front' },
+      { path: '/index', component: Front, name: 'front' },
       { path: '/about', component: About, name: 'about' },
       { path: '/friends', component: Friends, name: 'friends' },
       { path: '/all-natural', component: AllNatural, name: 'allnatural' },
@@ -32,8 +33,8 @@ export function createRouter () {
       { path: '/widerrufsbelehrung', component: Widerrufsbelehrung, name: 'widerrufsbelehrung' },
       { path: '/online-streitschlichter', component: Streitschlichtung, name: 'streitschlichtung' },
       { path: '/impressum', component: Impressum, name: 'impressum' },
-      { path: '/shop', component: Shop, name: 'shop' },
-      { path: '/:shop/:slug', name: 'product', component: Product }
+      // { path: '/shop', component: Shop, name: 'shop' },
+      // { path: '/shop/:slug', name: 'product', component: Product }
     ],
     scrollBehavior (to, from, savedPosition) {
       // return desired position
